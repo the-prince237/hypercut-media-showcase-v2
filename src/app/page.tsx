@@ -1,6 +1,6 @@
-'use client'
-import { Header } from "@/containers";
-import { Hero } from "@/sections";
+'use client';
+import { Header } from '@/containers';
+import { Hero } from '@/sections';
 
 export default function Home() {
   return (
