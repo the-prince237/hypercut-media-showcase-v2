@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "yarn prettier --write ."
+    "format": "yarn prettier --write .",
+    "watch": "watch 'yarn format' ./src"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -31,6 +32,7 @@
     "postcss": "^8",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "watch": "^1.0.2"
   }
 }
