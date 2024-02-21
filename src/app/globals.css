@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Alfa+Slab+One&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Alfa+Slab+One&display=swap');
 
 :root {
   --color-bg: white;
@@ -28,21 +28,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: "ABeeZee", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
-@layer utilities {
-  .font-alfa-slab {
-    font-family: "Alfa Slab One", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.font-alfa-slab {
+  font-family: "Alfa Slab One", serif;
+}
 
-  .text-gradient {
-    background: linear-gradient(180deg, #FF3BFF, #ECBFBF, #5C24FF, #D94FD5);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.text-gradient {
+  background: linear-gradient(-90deg, #FF3BFF, #ECBFBF, #5C24FF, #D94FD5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
