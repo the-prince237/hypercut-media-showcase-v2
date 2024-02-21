@@ -1,11 +1,14 @@
 import { Box, Typography } from '@mui/material'
+import classNames from 'classnames'
 import React from 'react'
+
+const HeroTitle = ({ title, gradient = false }: { title: string, gradient?: boolean}) => <Typography className={classNames('font-alfa-slab text-[25px] tablet:text-[35px] minLaptop:text-[56px] laptopView:text-[80px]', { "text-gradient": gradient})}>{title}</Typography> 
 
 const Hero = () => {
   return (
-    <Box className='absolute w-screen h-screen max-w-screen max-h-screen px-[196px] flex flex-col justify-center border-solid border-white border-2'>
-      <Typography className='text-[250px]'>PRENEZ LE CONTRÔLE</Typography>
-      <Typography className='text-white font-alfa-slab text-[80px]'>Sur Les Réseaux</Typography>
+    <Box>
+      <HeroTitle title='PRENEZ LE CONTRÔLE' gradient />
+      <HeroTitle title='Sur Les Réseaux' />
     </Box>
   )
 }
